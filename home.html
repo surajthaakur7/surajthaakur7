@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+</head>
+<body>
+<h1>Welcome to Home Screen</h1>
+<ul>
+{% for class in classes %}
+<li><a href="/batch/{{ class.name }}">{{ class.name }} - {{ class.batch }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>

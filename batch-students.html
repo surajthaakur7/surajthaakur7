@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ batch_name }}</title>
+</head>
+<body>
+<h1>{{ batch_name }}</h1>
+<ul>
+{% for student in students %}
+<li>{{ student }}</li>
+{% endfor %}
+</ul>
+<a href="/home">Back to Home</a>
+</body>
+</html>
